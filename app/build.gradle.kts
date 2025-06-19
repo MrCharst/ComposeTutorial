@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.composetutorial"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.composetutorial"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -66,4 +66,8 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation (libs.androidx.material)
+    implementation (libs.androidx.navigation.compose)
+    implementation (libs.androidx.material.icons.extended)
 }
